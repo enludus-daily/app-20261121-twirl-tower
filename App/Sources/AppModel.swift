@@ -481,7 +481,7 @@ final class AppModel {
     /// 次の今日の塔まで（時間、切り上げ）
     var hoursToTomorrow: Int {
         let start = calendar.startOfDay(for: calendar.date(byAdding: .day, value: 1, to: now) ?? now)
-        return max(1, Int(ceil(start.timeIntervalSince(Date() < now ? now : Date()) / 3600)))
+        return max(1, Int(ceil(start.timeIntervalSince(still ? now : Date()) / 3600)))
     }
 
     var pastDays: [String] { (1...14).map { Days.offset(now, days: -$0, calendar: calendar) } }
