@@ -1,21 +1,21 @@
 {
   "_doc": "App Store Connect に API で入れる情報（.github/workflows/asc.yml の metadata が読む）。文字数：name・subtitle 30、keywords 100（カンマ区切り）、promotionalText 170、description 4000。カテゴリの ID は EDUCATION・PRODUCTIVITY・UTILITIES・LIFESTYLE・HEALTH_AND_FITNESS など。審査への提出と App プライバシーの申告は本人が行う。",
   "locale": "ja",
-  "name": "",
-  "subtitle": "",
-  "primaryCategory": "",
-  "secondaryCategory": "",
-  "supportUrl": "https://github.com/enludus-daily/__REPO__/issues",
-  "privacyPolicyUrl": "https://github.com/enludus-daily/__REPO__/blob/main/PRIVACY.md",
-  "keywords": "",
-  "promotionalText": "",
-  "description": "",
-  "whatToTest": "",
+  "name": "まわる塔とかくれ猫",
+  "subtitle": "回すと道がつながる、猫さがし",
+  "primaryCategory": "GAMES",
+  "secondaryCategory": "ENTERTAINMENT",
+  "supportUrl": "https://github.com/enludus-daily/app-20261121-twirl-tower/issues",
+  "privacyPolicyUrl": "https://github.com/enludus-daily/app-20261121-twirl-tower/blob/main/PRIVACY.md",
+  "keywords": "猫,ねこ,かくれんぼ,猫さがし,錯視,パズル,塔,だまし絵,回転,謎解き,脳トレ,図鑑,癒し,毎日",
+  "promotionalText": "空に浮かぶ小さな塔を指で回すと、見え方と道が変わる。窓の中・道の先・影の足あとに隠れた猫を 5 匹さがそう。毎日ちがう塔がひとつ届く。",
+  "description": "回すと、道がつながる。夕暮れの空に浮かぶ、ありえない形の小さな塔で猫をさがすパズル。\n\n■ きまりは 1 つ\n画面で隣り合って見えた床は、つながる。\n塔を指で回すと 90° ごとに止まり、向きごとに見え方と道が変わります。本当は離れた床も、この向きで並んで見えれば歩いて渡れます。\n\n■ 猫は 3 種類\n・窓の猫：その向きからしか見えない窓の中で、目だけ光らせています\n・道の先の猫：屋上で寝ています。錯視の道を渡って会いに行きましょう\n・影の猫：2 つの向きで足あとを見つけると現れます\n1 つの塔に 5 匹。全部見つけると塔を解いたことになり、ミニチュアが棚に並びます。\n\n■ 毎日ちがう「今日の塔」\n日付から毎日ちがう塔が届きます（どの猫も見つけられることを確かめて作っています）。続けた日数、灯りの評価（ヒントなしで 3 つ）、猫図鑑 40 匹（名前・好物・くせ）を集めましょう。\n\n■ やさしいヒント\n詰まったら 3 段階のヒント（向き → 場所のあたり → 光る）。ヒントはずっと無料です。\n\n■ Pro（買い切り）\n・塔が 28 増える（灯台・時計台・温室・天文台など。1 つはお試しで無料）\n・Pro の塔にだけいる珍しい猫 16 匹\n・過去 14 日の「今日の塔」をあとから遊べる\nサブスクではありません。家族共有に対応。\n\n■ プライバシー\n記録は端末の中だけ。通信・広告・解析・アカウントはありません。",
+  "whatToTest": "1) 案内 3 ページのあと、今日の塔をドラッグで回すと 90° ごとに止まること。2) 窓の中の光る目をたたくと猫が見つかること。3) 床をたたくと旅人が歩き、向きを変えて道がつながると床が光ること（屋上の猫まで歩くと見つかる）。4) 影の足あとを 2 つの向きでたたくと影の猫が現れること。5) ヒントが 3 段階で進むこと。6) 5 匹見つけると結果が出て、閉じたあとに一度だけ Pro の画面が出て、購入と復元ができること。",
   "en-US": {
-    "name": "",
-    "subtitle": "",
-    "keywords": "",
-    "promotionalText": "",
-    "description": ""
+    "name": "Twirl Tower: Hidden Cats",
+    "subtitle": "Turn the tower, find the cats",
+    "keywords": "cat,cats,hidden,hide and seek,optical illusion,puzzle,tower,isometric,rotate,cozy,daily,brain",
+    "promotionalText": "Spin a tiny tower floating in the dusk sky and watch new paths line up. Find 5 cats hiding in windows, on rooftops and in shadows. A new tower every day.",
+    "description": "Turn it, and the paths connect. A cozy puzzle about finding cats in impossible little towers floating in the evening sky.\n\n■ One rule\nIf floors look connected on screen, they are.\nDrag to spin the tower; it snaps every 90°. Each side changes what you can see and where you can walk. Floors that are far apart can be crossed when they line up.\n\n■ Three kinds of cats\n• Window cats: only their glowing eyes show, and only from one side\n• Rooftop cats: napping at the end of a path you have to make by turning the tower\n• Shadow cats: tap their paw prints from two different sides and they appear\nFive cats per tower. Find them all and a miniature joins your shelf.\n\n■ A new tower every day\nEvery day brings a new tower (each one is checked to be solvable). Keep your streak, earn up to three lamps by solving without hints, and fill a cat book of 40 cats with names, favorite foods and quirks.\n\n■ Gentle hints\nStuck? Hints come in three steps: which side, roughly where, then a glow. Hints are always free.\n\n■ Pro (one-time purchase)\n• 28 more towers: lighthouse, clock tower, greenhouse, observatory and more (one is free to try)\n• 16 rare cats that live only in Pro towers\n• Play the last 14 daily towers you missed\nNot a subscription. Family Sharing supported.\n\n■ Privacy\nYour progress stays on your device. No network, ads, analytics or accounts."
   }
 }

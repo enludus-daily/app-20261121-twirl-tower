@@ -1,42 +1,3005 @@
 {
   "sourceLanguage": "ja",
   "strings": {
-    "はじめる": {
+    "%@ をみつけた": {
+      "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Start"
+            "value": "Found %@"
           }
         }
       }
     },
-    "リセット": {
+    "%d 日つづけて": {
+      "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Reset"
+            "value": "%d-day streak"
           }
         }
       }
     },
-    "1 たす": {
+    "%d 日つづけて解いた。明日はまた別の塔": {
+      "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Add 1"
+            "value": "%d days in a row. A new tower tomorrow"
           }
         }
       }
     },
-    "回数 %lld": {
+    "%d 日つづけて解いている（最長 %d 日）": {
+      "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Count %lld"
+            "value": "%d-day streak (best %d)"
+          }
+        }
+      }
+    },
+    "1 回の購入で、ずっと": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One purchase, forever"
+          }
+        }
+      }
+    },
+    "2 匹いるように見える": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Somehow looks like two cats"
+          }
+        }
+      }
+    },
+    "3 つの色の窓が好き": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Loves three-colored windows"
+          }
+        }
+      }
+    },
+    "5 匹の猫を探そう": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find all 5 cats"
+          }
+        }
+      }
+    },
+    "Pro にする %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get Pro %@"
+          }
+        }
+      }
+    },
+    "Pro の塔にだけいる猫。図鑑が 40 匹そろう": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cats that live only in Pro towers. Complete all 40"
+          }
+        }
+      }
+    },
+    "Pro の塔にだけいる珍しい猫": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A rare cat found only in Pro towers"
+          }
+        }
+      }
+    },
+    "Pro を使っている。ありがとう！": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You have Pro. Thank you!"
+          }
+        }
+      }
+    },
+    "Pro を見る": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See Pro"
+          }
+        }
+      }
+    },
+    "あじの開き": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grilled mackerel"
+          }
+        }
+      }
+    },
+    "あずき": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bean"
+          }
+        }
+      }
+    },
+    "あずき色のクッキー": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Red bean cookies"
+          }
+        }
+      }
+    },
+    "あたためたミルク": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Warm milk"
+          }
+        }
+      }
+    },
+    "あたりを丸で示した": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The area is circled"
+          }
+        }
+      }
+    },
+    "ありがとう！ Pro の塔が棚に並んだ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thank you! Pro towers are on the shelf"
+          }
+        }
+      }
+    },
+    "いつも北の窓にいる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Always at the north window"
+          }
+        }
+      }
+    },
+    "いつも風上を向く": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Always faces the wind"
+          }
+        }
+      }
+    },
+    "いまは購入できない。通信できる所で開き直してほしい": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Purchases aren't available right now. Try again with a connection"
+          }
+        }
+      }
+    },
+    "いわしの干物": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dried sardines"
+          }
+        }
+      }
+    },
+    "おためし": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try"
+          }
+        }
+      }
+    },
+    "おもち": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mochi"
+          }
+        }
+      }
+    },
+    "かつおぶし": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bonito flakes"
+          }
+        }
+      }
+    },
+    "かまどの前で丸くなる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Curls up by the oven"
+          }
+        }
+      }
+    },
+    "きなこ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toffee"
+          }
+        }
+      }
+    },
+    "きなこのビスケット": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toffee biscuits"
+          }
+        }
+      }
+    },
+    "くろまめ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pepper"
+          }
+        }
+      }
+    },
+    "この向きのまま": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "this side works"
+          }
+        }
+      }
+    },
+    "この塔の猫": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cats in this tower"
+          }
+        }
+      }
+    },
+    "この塔の猫はぜんぶ見つけた": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You found every cat here"
+          }
+        }
+      }
+    },
+    "こはく": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Amber"
+          }
+        }
+      }
+    },
+    "こむぎ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wheat"
+          }
+        }
+      }
+    },
+    "ごま": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sesame"
+          }
+        }
+      }
+    },
+    "ごまだんご": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sesame balls"
+          }
+        }
+      }
+    },
+    "しまじろう": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stripes"
+          }
+        }
+      }
+    },
+    "すきまに挟まるのが好き": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Loves squeezing into gaps"
+          }
+        }
+      }
+    },
+    "すみ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inky"
+          }
+        }
+      }
+    },
+    "ぜんぶ見つけた塔。もう一度ながめられる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All found here. Enjoy the view again"
+          }
+        }
+      }
+    },
+    "ちくわ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fish cakes"
+          }
+        }
+      }
+    },
+    "ちゃとら": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marmalade"
+          }
+        }
+      }
+    },
+    "つくし": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprout"
+          }
+        }
+      }
+    },
+    "とばす": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skip"
+          }
+        }
+      }
+    },
+    "どこかの塔にいる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hiding in some tower"
+          }
+        }
+      }
+    },
+    "にしんの燻製": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Smoked herring"
+          }
+        }
+      }
+    },
+    "ねこの城": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cat Castle"
+          }
+        }
+      }
+    },
+    "ねこ草": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cat grass"
+          }
+        }
+      }
+    },
+    "ねずみ色のトト": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toto"
+          }
+        }
+      }
+    },
+    "はいいろ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ash"
+          }
+        }
+      }
+    },
+    "はしごの上で寝る": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naps on top of ladders"
+          }
+        }
+      }
+    },
+    "はじまりの塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "First Tower"
+          }
+        }
+      }
+    },
+    "はじめの案内をもう一度見る": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show the intro again"
+          }
+        }
+      }
+    },
+    "はちみつのにおい": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The smell of honey"
+          }
+        }
+      }
+    },
+    "ひきたての麦": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fresh-ground grain"
+          }
+        }
+      }
+    },
+    "ひよこ豆": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chickpeas"
+          }
+        }
+      }
+    },
+    "ふたご塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Twin Towers"
+          }
+        }
+      }
+    },
+    "ぷりん": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custard"
+          }
+        }
+      }
+    },
+    "べつの向きからも、足あとを探そう": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Look for more prints from another side"
+          }
+        }
+      }
+    },
+    "ぽんず": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ponzu"
+          }
+        }
+      }
+    },
+    "まぐろの赤身": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tuna"
+          }
+        }
+      }
+    },
+    "ましろ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Snow"
+          }
+        }
+      }
+    },
+    "まだ 1 匹も会っていない。塔を回して、窓の中の光る目を探そう。": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No cats yet. Turn a tower and look for glowing eyes in the windows."
+          }
+        }
+      }
+    },
+    "まだ見つけていない": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not found yet"
+          }
+        }
+      }
+    },
+    "まだ道がつながっていない": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The path isn't connected yet"
+          }
+        }
+      }
+    },
+    "まるくなると石に見える": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Looks like a stone when curled"
+          }
+        }
+      }
+    },
+    "まわる塔とかくれ猫": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Twirl Tower: Hidden Cats"
+          }
+        }
+      }
+    },
+    "みかんの皮（においだけ）": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orange peel (just the smell)"
+          }
+        }
+      }
+    },
+    "みけ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Patches"
+          }
+        }
+      }
+    },
+    "もう一度読み込む": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reload"
+          }
+        }
+      }
+    },
+    "もなか": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wafer"
+          }
+        }
+      }
+    },
+    "やわらかいチーズ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soft cheese"
+          }
+        }
+      }
+    },
+    "ゆき": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flurry"
+          }
+        }
+      }
+    },
+    "ゆでたささみ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poached chicken"
+          }
+        }
+      }
+    },
+    "カスタードのはしっこ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The edge of a custard tart"
+          }
+        }
+      }
+    },
+    "カーテンのふりをする": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pretends to be a curtain"
+          }
+        }
+      }
+    },
+    "キャットミント": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catmint"
+          }
+        }
+      }
+    },
+    "サーモンの切れはし": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salmon scraps"
+          }
+        }
+      }
+    },
+    "ソラ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sky"
+          }
+        }
+      }
+    },
+    "タキシード": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tux"
+          }
+        }
+      }
+    },
+    "ドラッグで回して、猫を 5 匹さがそう": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drag to turn the tower and find 5 cats"
+          }
+        }
+      }
+    },
+    "ハチ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hachi"
+          }
+        }
+      }
+    },
+    "バターロール": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Butter rolls"
+          }
+        }
+      }
+    },
+    "バージョン %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version %@"
+          }
+        }
+      }
+    },
+    "パン屋のブリオッシュ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brioche"
+          }
+        }
+      }
+    },
+    "パン屋の塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bakery Tower"
+          }
+        }
+      }
+    },
+    "ヒント": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hint"
+          }
+        }
+      }
+    },
+    "ヒント %d 回": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d hints used"
+          }
+        }
+      }
+    },
+    "ヒント %d/3": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hint %d/3"
+          }
+        }
+      }
+    },
+    "ヒント 1：%@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hint 1: %@"
+          }
+        }
+      }
+    },
+    "ヒント 2：%@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hint 2: %@"
+          }
+        }
+      }
+    },
+    "ヒント 3：光っている": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hint 3: it's glowing"
+          }
+        }
+      }
+    },
+    "ヒントなしで 5 匹": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All 5 without hints"
+          }
+        }
+      }
+    },
+    "ヒントはない": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No hints"
+          }
+        }
+      }
+    },
+    "プライバシー": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privacy"
+          }
+        }
+      }
+    },
+    "ミルク": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Milky"
+          }
+        }
+      }
+    },
+    "ミルクのあわ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Milk foam"
+          }
+        }
+      }
+    },
+    "ランプ屋": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lamp Shop"
+          }
+        }
+      }
+    },
+    "リボンのはし": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ribbon ends"
+          }
+        }
+      }
+    },
+    "ルナ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Luna"
+          }
+        }
+      }
+    },
+    "ロープの結び目にくわしい": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Knows every knot"
+          }
+        }
+      }
+    },
+    "三つ角の塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Three-Corner Tower"
+          }
+        }
+      }
+    },
+    "今日から、また 1 日目": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Day one starts today"
+          }
+        }
+      }
+    },
+    "今日の塔 %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Today's Tower %@"
+          }
+        }
+      }
+    },
+    "今日の塔は解いた。また明日": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solved today. A new one tomorrow"
+          }
+        }
+      }
+    },
+    "会えた回数 %d": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Met %d times"
+          }
+        }
+      }
+    },
+    "会えた猫 %d / 40": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d / 40 cats met"
+          }
+        }
+      }
+    },
+    "先に 1 つ試せる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try one first"
+          }
+        }
+      }
+    },
+    "光る所をたたこう": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap the glow"
+          }
+        }
+      }
+    },
+    "冷たい水": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cold water"
+          }
+        }
+      }
+    },
+    "凧揚げ台": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kite Deck"
+          }
+        }
+      }
+    },
+    "切手のふち": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stamp edges"
+          }
+        }
+      }
+    },
+    "効果音": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sound effects"
+          }
+        }
+      }
+    },
+    "古い水門": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Old Floodgate"
+          }
+        }
+      }
+    },
+    "古い紙のにおい": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The smell of old paper"
+          }
+        }
+      }
+    },
+    "右の面": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "right side"
+          }
+        }
+      }
+    },
+    "右へ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Right"
+          }
+        }
+      }
+    },
+    "右へ 1 回まわす": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "turn right once"
+          }
+        }
+      }
+    },
+    "右へ回す": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn right"
+          }
+        }
+      }
+    },
+    "司書のページ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Page the Librarian"
+          }
+        }
+      }
+    },
+    "図書塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Library Spire"
+          }
+        }
+      }
+    },
+    "図鑑に追加：好物は%@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New in the book — loves %@"
+          }
+        }
+      }
+    },
+    "塔。いまは%@から見ている。猫 %d / 5": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The tower, seen from the %@. Cats %d / 5"
+          }
+        }
+      }
+    },
+    "塔が 28 つ増える": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "28 more towers"
+          }
+        }
+      }
+    },
+    "塔のいちばん下にいがち": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usually on the lowest floor"
+          }
+        }
+      }
+    },
+    "塔の棚": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tower shelf"
+          }
+        }
+      }
+    },
+    "塔の絵を共有": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share the tower"
+          }
+        }
+      }
+    },
+    "塔へ行く": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Go to the tower"
+          }
+        }
+      }
+    },
+    "塔をぜんぶ解いた人の前にだけ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appears only to those who solved every tower"
+          }
+        }
+      }
+    },
+    "塔をめぐる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The towers"
+          }
+        }
+      }
+    },
+    "塔をドラッグすると回る。指をはなすと 90° ごとに止まる。": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drag the tower to turn it. It snaps every 90°."
+          }
+        }
+      }
+    },
+    "塔を回すと、見え方が変わる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn the tower, change the view"
+          }
+        }
+      }
+    },
+    "塔を回すと、見え方と道が変わる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn the tower to change how paths line up"
+          }
+        }
+      }
+    },
+    "塔を解いた": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tower solved"
+          }
+        }
+      }
+    },
+    "塩焼きのさば": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salted mackerel"
+          }
+        }
+      }
+    },
+    "壁の色にあわせて座る": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sits where the wall matches"
+          }
+        }
+      }
+    },
+    "夕方にだけ正装する": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dresses up only at dusk"
+          }
+        }
+      }
+    },
+    "夕日と同じ色で隠れる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hides in the sunset's color"
+          }
+        }
+      }
+    },
+    "夕暮れ駅": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dusk Station"
+          }
+        }
+      }
+    },
+    "夜明けのアウローラ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aurora"
+          }
+        }
+      }
+    },
+    "夜明けの塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dawn Tower"
+          }
+        }
+      }
+    },
+    "天文係のステラ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stella"
+          }
+        }
+      }
+    },
+    "天文台": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Observatory"
+          }
+        }
+      }
+    },
+    "好物：%@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Loves: %@"
+          }
+        }
+      }
+    },
+    "屋上の日だまりから動かない": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Never leaves the sunny rooftop"
+          }
+        }
+      }
+    },
+    "屋根のかげで丸くなる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Curls up in a roof's shade"
+          }
+        }
+      }
+    },
+    "左の面": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "left side"
+          }
+        }
+      }
+    },
+    "左へ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Left"
+          }
+        }
+      }
+    },
+    "左へ 1 回まわす": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "turn left once"
+          }
+        }
+      }
+    },
+    "左へ回す": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn left"
+          }
+        }
+      }
+    },
+    "帽子の中に入る": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Climbs into hats"
+          }
+        }
+      }
+    },
+    "帽子屋のフェルト": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Felt"
+          }
+        }
+      }
+    },
+    "帽子屋の塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hatter's Tower"
+          }
+        }
+      }
+    },
+    "影の回廊": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shadow Arcade"
+          }
+        }
+      }
+    },
+    "影の猫": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shadow cat"
+          }
+        }
+      }
+    },
+    "影の猫は、2 つの向きで足あとをたたくと現れる。": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shadow cats appear after you tap their prints from two sides."
+          }
+        }
+      }
+    },
+    "影の足あと": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "shadow paw prints"
+          }
+        }
+      }
+    },
+    "復元した": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restored"
+          }
+        }
+      }
+    },
+    "復元できる購入はなかった": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No purchase to restore"
+          }
+        }
+      }
+    },
+    "手紙の上に座る": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sits on letters"
+          }
+        }
+      }
+    },
+    "承認を待っている": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting for approval"
+          }
+        }
+      }
+    },
+    "指でドラッグすると、空に浮かぶ塔が回る。はなすと 90° ごとに、すっと止まる。": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drag to spin the floating tower. Let go and it snaps every 90°."
+          }
+        }
+      }
+    },
+    "振動": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haptics"
+          }
+        }
+      }
+    },
+    "日が傾くと色が変わって見える": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Changes color in the setting sun"
+          }
+        }
+      }
+    },
+    "明日はまた別の塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A new tower tomorrow"
+          }
+        }
+      }
+    },
+    "星形のチーズ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Star-shaped cheese"
+          }
+        }
+      }
+    },
+    "星見台": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stargazer Deck"
+          }
+        }
+      }
+    },
+    "時計台": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clock Tower"
+          }
+        }
+      }
+    },
+    "時計屋のチクタク": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ticktock"
+          }
+        }
+      }
+    },
+    "最中の皮": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wafer shells"
+          }
+        }
+      }
+    },
+    "月が出ると窓辺に来る": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comes to the window at moonrise"
+          }
+        }
+      }
+    },
+    "月の階段": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moon Stairs"
+          }
+        }
+      }
+    },
+    "望遠鏡をのぞく": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Peeks through the telescope"
+          }
+        }
+      }
+    },
+    "朝つゆ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Morning dew"
+          }
+        }
+      }
+    },
+    "本当は離れた床も、この向きでつながって見えれば歩いて渡れる。向きを変えると、道が変わる。": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Even far-apart floors can be crossed when they line up on screen. Each side opens different paths."
+          }
+        }
+      }
+    },
+    "本棚の 3 段目で寝る": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sleeps on the third shelf"
+          }
+        }
+      }
+    },
+    "棚の %d 番「%@」は無料で遊べる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tower %d, “%@”, is free to try"
+          }
+        }
+      }
+    },
+    "棚へ（次の塔をえらぶ）": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To the shelf (pick the next tower)"
+          }
+        }
+      }
+    },
+    "植木鉢のふりをする": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pretends to be a flowerpot"
+          }
+        }
+      }
+    },
+    "橋の真ん中で伸びる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stretches in the middle of bridges"
+          }
+        }
+      }
+    },
+    "次の猫は%@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The next cat is %@"
+          }
+        }
+      }
+    },
+    "次へ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next"
+          }
+        }
+      }
+    },
+    "正時にだけ顔を出す": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shows up only on the hour"
+          }
+        }
+      }
+    },
+    "正面": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "front"
+          }
+        }
+      }
+    },
+    "歯車形のクッキー": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gear-shaped cookies"
+          }
+        }
+      }
+    },
+    "温室": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Greenhouse"
+          }
+        }
+      }
+    },
+    "温室のミント": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mint"
+          }
+        }
+      }
+    },
+    "灯り %d / 3": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lamps %d / 3"
+          }
+        }
+      }
+    },
+    "灯りがつく時間を知っている": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Knows when the lamp lights up"
+          }
+        }
+      }
+    },
+    "灯台": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lighthouse"
+          }
+        }
+      }
+    },
+    "灯台・時計台・温室・天文台…大きく高く、橋の多い塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lighthouse, clock tower, greenhouse, observatory… taller towers with more bridges"
+          }
+        }
+      }
+    },
+    "灯台守のオリオン": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orion the Keeper"
+          }
+        }
+      }
+    },
+    "焼きたてのパンの耳": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Warm bread crusts"
+          }
+        }
+      }
+    },
+    "猫 %d / 5": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cats %d / 5"
+          }
+        }
+      }
+    },
+    "猫 %d / 5 ・ 毎日ちがう塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cats %d / 5 · a new tower every day"
+          }
+        }
+      }
+    },
+    "猫図鑑": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cat book"
+          }
+        }
+      }
+    },
+    "珍しい": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rare"
+          }
+        }
+      }
+    },
+    "珍しい猫 16 匹": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "16 rare cats"
+          }
+        }
+      }
+    },
+    "画面で隣り合って見えた床は、つながる。": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Floors that look connected are connected."
+          }
+        }
+      }
+    },
+    "画面で隣り合って見えた床は、つながる。床をたたくと歩く。": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Floors that look connected are connected. Tap a floor to walk."
+          }
+        }
+      }
+    },
+    "画面で隣り合って見える床は、つながる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Floors that look connected on screen are connected"
+          }
+        }
+      }
+    },
+    "白身魚のムニエル": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Butter-fried white fish"
+          }
+        }
+      }
+    },
+    "目だけ光らせて待つ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waits with only its eyes glowing"
+          }
+        }
+      }
+    },
+    "砂時計塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hourglass Tower"
+          }
+        }
+      }
+    },
+    "空の色に溶けこむ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melts into the sky"
+          }
+        }
+      }
+    },
+    "空中庭園": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sky Garden"
+          }
+        }
+      }
+    },
+    "窓の中": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "in a window"
+          }
+        }
+      }
+    },
+    "窓の中の光る目、道の先の屋上、2 つの向きの足あと。毎日ちがう塔がひとつ届く。記録は端末の中だけ。": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Glowing eyes in windows, rooftops down the path, paw prints seen from two sides. A new tower every day. Progress stays on your device."
+          }
+        }
+      }
+    },
+    "窓の影にまぎれるのが得意": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blends into window shadows"
+          }
+        }
+      }
+    },
+    "窓の猫": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Window cat"
+          }
+        }
+      }
+    },
+    "窓の猫は、見える向きでたたく。屋上の猫は歩いて会いに行く。": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap window cats from the side they show. Walk up to rooftop cats."
+          }
+        }
+      }
+    },
+    "糸巻き塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spool Tower"
+          }
+        }
+      }
+    },
+    "給水塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Water Tower"
+          }
+        }
+      }
+    },
+    "綿あめ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cotton candy"
+          }
+        }
+      }
+    },
+    "羽根といっしょに回る": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spins with the blades"
+          }
+        }
+      }
+    },
+    "船乗りのアンカー": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anchor"
+          }
+        }
+      }
+    },
+    "船着き塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Harbor Tower"
+          }
+        }
+      }
+    },
+    "花かごに入って運ばれる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rides in flower baskets"
+          }
+        }
+      }
+    },
+    "花びらのにおい": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The smell of petals"
+          }
+        }
+      }
+    },
+    "花屋のブーケ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bouquet"
+          }
+        }
+      }
+    },
+    "花屋の塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flower Tower"
+          }
+        }
+      }
+    },
+    "葉っぱの間で目を閉じる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Closes its eyes among leaves"
+          }
+        }
+      }
+    },
+    "蜂の巣塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hive Tower"
+          }
+        }
+      }
+    },
+    "裏": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "back"
+          }
+        }
+      }
+    },
+    "裏側から見る": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "look from the back"
+          }
+        }
+      }
+    },
+    "見つかるとすぐ寝る": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falls asleep as soon as found"
+          }
+        }
+      }
+    },
+    "見つけた猫 %d / 5": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cats found %d / 5"
+          }
+        }
+      }
+    },
+    "見のがした日の塔を、あとから遊べる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play the days you missed"
+          }
+        }
+      }
+    },
+    "解いた塔 %d ・ 図鑑 %d / 40": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%d towers solved · %d / 40 cats"
+          }
+        }
+      }
+    },
+    "記録は端末の中だけに残る。通信・広告・解析はしない。": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your progress stays on this device. No network, ads, or analytics."
+          }
+        }
+      }
+    },
+    "設定": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings"
+          }
+        }
+      }
+    },
+    "買い切り（サブスクではない）。家族共有に対応。ヒントはずっと無料。": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One-time purchase, not a subscription. Family Sharing supported. Hints are always free."
+          }
+        }
+      }
+    },
+    "購入できなかった。時間をおいて試してほしい": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The purchase didn't go through. Please try again later"
+          }
+        }
+      }
+    },
+    "購入を復元": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restore purchase"
+          }
+        }
+      }
+    },
+    "購入中…": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Purchasing…"
+          }
+        }
+      }
+    },
+    "足あと 1 / 2": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paw prints 1 / 2"
+          }
+        }
+      }
+    },
+    "迷い橋": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lost Bridges"
+          }
+        }
+      }
+    },
+    "迷子のポラリス": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Polaris"
+          }
+        }
+      }
+    },
+    "逆さ塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upside Tower"
+          }
+        }
+      }
+    },
+    "遊び方": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How to play"
+          }
+        }
+      }
+    },
+    "過去 14 日の今日の塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The last 14 daily towers"
+          }
+        }
+      }
+    },
+    "過去の今日の塔（Pro）": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Past daily towers (Pro)"
+          }
+        }
+      }
+    },
+    "道しるべのクッキー": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Signpost cookies"
+          }
+        }
+      }
+    },
+    "道の先の屋上": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "on a rooftop down the path"
+          }
+        }
+      }
+    },
+    "道の先の猫": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rooftop cat"
+          }
+        }
+      }
+    },
+    "郵便係のスタンプ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stamp"
+          }
+        }
+      }
+    },
+    "郵便受けの中に住んでいる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lives in a mailbox"
+          }
+        }
+      }
+    },
+    "郵便塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Post Tower"
+          }
+        }
+      }
+    },
+    "鈴カステラ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bell-shaped sponge cakes"
+          }
+        }
+      }
+    },
+    "鐘が鳴ると耳をふせる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flattens its ears at the bell"
+          }
+        }
+      }
+    },
+    "鐘つきのリン": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ring"
+          }
+        }
+      }
+    },
+    "鐘楼": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bell Tower"
+          }
+        }
+      }
+    },
+    "閉じる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close"
+          }
+        }
+      }
+    },
+    "階段の家": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "House of Stairs"
+          }
+        }
+      }
+    },
+    "階段を 1 段とばしでのぼる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Climbs two steps at a time"
+          }
+        }
+      }
+    },
+    "隣り合って見えた床は、つながる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If floors look connected, they are"
+          }
+        }
+      }
+    },
+    "雲と見分けがつかない": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Can't be told apart from clouds"
+          }
+        }
+      }
+    },
+    "雲の宿": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloud Inn"
+          }
+        }
+      }
+    },
+    "雲の宿のフワリ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluff"
+          }
+        }
+      }
+    },
+    "雲みたいなメレンゲ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloud-like meringue"
+          }
+        }
+      }
+    },
+    "音と振動": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sound & haptics"
+          }
+        }
+      }
+    },
+    "音楽塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Music Tower"
+          }
+        }
+      }
+    },
+    "風に乗る羽根": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feathers on the wind"
+          }
+        }
+      }
+    },
+    "風見のヴェーン": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vane"
+          }
+        }
+      }
+    },
+    "風見の家": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weathervane House"
+          }
+        }
+      }
+    },
+    "風見を回して遊ぶ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plays with the weathervane"
+          }
+        }
+      }
+    },
+    "風車": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Windmill"
+          }
+        }
+      }
+    },
+    "風車番のミル": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mill"
+          }
+        }
+      }
+    },
+    "高いところほど機嫌がいい": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Happier the higher it is"
+          }
+        }
+      }
+    },
+    "鳥かご塔": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Birdcage Tower"
+          }
+        }
+      }
+    },
+    "鶏の皮": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crispy chicken skin"
+          }
+        }
+      }
+    },
+    "黄色い床をたどると近づける": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Follow the glowing floor"
           }
         }
       }

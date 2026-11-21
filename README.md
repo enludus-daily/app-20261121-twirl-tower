@@ -1,36 +1,79 @@
-# daily-app-template
+# まわる塔とかくれ猫 / Twirl Tower: Hidden Cats
 
-enludus-daily で毎日作る iOS アプリ（SwiftUI）のテンプレート。テンプレートから作ったリポジトリでは、この README をそのアプリの説明に書き換える。
+夕暮れの空に浮かぶ、ありえない形の小さな塔を指で回して、隠れた猫を 5 匹さがす iPhone のゲーム（enludus-daily 2026-11-21、枠 002、[daily-ideas #42](https://github.com/enludus-daily/daily-ideas/issues/42)）。
 
-## 中身
+- **だれの**：寝る前や移動中に 5 分だけ、頭をやわらかく使って遊びたい人。猫の絵探しは「1 枚の絵を眺めて拡大する」だけで飽きやすい。錯視のパズルは「向きをそろえる」だけで探す楽しさがない。
+- **組み合わせ**：錯視の建物（回すと見え方と道が変わる）× かくれんぼ（猫探し）。
+- **きまりは 1 つ**：「**画面で隣り合って見えた床は、つながる**」。塔は 90° ずつ 4 つの向きで止まり、向きごとにつながる道が変わる。
+- **猫は 3 種類**：窓の猫（その向きでしか見えない）・道の先の猫（錯視の道を渡って会いに行く）・影の猫（2 つの向きで足あとを見つけると現れる）。
+- **作らなかったもの**：塔のエディタ、オンライン、ランキング、AI。
 
-| パス | 役割 |
+## 遊び方
+1. 塔をドラッグして回す（指をはなすと 90° ごとに吸い付いて止まる）。下の「左へ」「右へ」でも回せる。
+2. 床をたたくと旅人が歩く。行ける床には小さな飛び石の印が出る。向きを変えて新しい道がつながると、その床が順に光る。
+3. 窓の光る目をたたく・屋上の猫まで歩く・影の足あとを 2 つの向きでたたく。
+4. 詰まったらヒント（3 段階：向き → 場所のあたり → 光る）。ヒントを使うと灯りの評価（3 つ）が減る。
+
+## 中身（1 日で遊びきれない量）
+- **今日の塔**：日付から毎日ちがう塔を作る（無料）。どの猫も見つけられることを、作るときに解いて確かめる（`TowerGenerator`・`Walker.route`。テスト `dailyTowersForTwoMonthsAreFindable`）。
+- **塔の棚**：番号つきの塔 36（無料 8 ＋お試し 1。大きく・高く・橋が多くなっていく）。
+- **猫図鑑**：40 匹（名前・好物・くせ。日本語と英語）。うち 16 匹は Pro の塔だけにいる珍しい猫。
+- **毎日開く理由**：今日の塔・続けた日数（責めない言い方：「今日から、また 1 日目」）・図鑑の埋まり・棚のミニチュアと灯りの評価・塔の絵の共有。
+
+## 世界観と見た目
+- 世界：夕暮れの空（ラベンダー → ローズ → アプリコット）に浮かぶ塔。テラコッタ・ミント・砂・すもも色の壁、アーチの窓、はしご、屋根と小旗。
+- このアプリでは〔塔の窓・屋上・はしご〕が〔猫の隠れ場所〕に、〔アーチの窓〕が〔札・パネルの形〕（`ArchPanel`）に、〔石段〕が〔ボタン〕（`StepButtonStyle`：押すと段が沈む）になる。
+- 書体：見出しと数字は銘板のような横に広い字（`.width(.expanded)`）、本文はふつうの字。
+- 塔・猫・旅人は全部 Canvas の自作の絵（`TowerArt.swift`）。等角の投影は `x = (u − w)·0.866·s、y = (u + w)·0.5·s − h·s` で、(1, 1, 1) ずれた点が重なる（＝錯視の道のきまりと同じ式）。
+- 前日までのアプリとの違い：地が夕空のグラデーション（灯り島は昼の砂浜と夜の紫、カギことばは紙）、見出しが横に広い字（明朝・丸ゴシックではない）、主役が等角のブロック。
+- 画面はライトに固定（夕空の世界を自前の色で描くため。ダークでも同じ夕空）。
+
+## 手応えの表
+| できごと | 動き | 振動 | 音 |
+|---|---|---|---|
+| 押す | 石段のボタンが 3pt 沈む（spring 0.22） | selection | 木のコツッ（0.35） |
+| 回す | 指に合わせて連続で回る。90° をまたぐたびに | selection | 石のカチ（0.35） |
+| 止まる | 少し行きすぎて戻る（easeOutBack 0.34 秒） | impact light | 低いコトッ（0.45） |
+| 道がつながる（連続） | 新しく行ける床が、近い順に 55ms ずつ光る | impact rigid | 風鈴 3 音が上へ（0.6） |
+| 1 匹見つける | 猫が 0.6→1 倍に弾み、しっぽを振る（1.4 秒）。灯りの知らせ | impact medium | 小さな「にゃ」＋鈴（0.8） |
+| 足あと | 足あとが灯り色になる | impact light | 鈴（0.6） |
+| 届かない（失敗） | 塔が横に 8pt 揺れて減衰（0.42 秒） | warning | 低いポスッ（0.6） |
+| 塔を解いた（完了） | 結果で灯りが 1 つずつ点く（320ms ずつ） | success | 灯りの和音（0.8） |
+| 場面の切れ目 | 塔の名前と猫の数の知らせ、案内のページ送り | — | 紙の音（0.35） |
+
+動きを減らす設定では、回すのは止まった向きに直接、揺れ・弾み・しっぽ・光の時間差を止める。効果音と振動は設定で別々に切れる。
+
+## 課金
+**買い切りの Pro ¥480（家族共有）**。商品 ID は枠の使い回しの `com.enludus.daily.002.pro`（`docs/products.json`・`Configuration.storekit`）。
+- 無料：今日の塔（毎日）・棚の 1〜8・ヒントは全部無料（消耗型は作らない）。
+- Pro：①塔 28（9 番はお試しで無料）②珍しい猫 16 匹 ③過去 14 日の今日の塔。
+- 出す場面：最初に塔を 1 つ解いて結果を閉じた直後に 1 回だけ。ほかは鍵の付いた塔をたたいたとき・設定から。購入の復元あり。値段は StoreKit の `displayPrice`。
+- サブスクにしない理由：毎月増える中身ではないため。
+
+### 比べたアプリ（App Store の公開ページ、2026-11-21 に調べた）
+| アプリ | 形 | 値段 | 中身 |
+|---|---|---|---|
+| [Hidden Cat 2: find the object](https://apps.apple.com/us/app/-/id6737279507) | 無料＋買い切り | 全レベル解放 $4.99 | 1 枚絵の猫探し |
+| [Find The Cat - Hidden Objects](https://apps.apple.com/app/id6523424272) | 無料＋サブスク・ヒント | Cat Club $3.99、ヒント $2.99〜$4.99、広告なし $8.99 | 1 枚絵の猫探し |
+| [Find the Cats!](https://apps.apple.com/us/app/-/id1073350708) | 無料＋パック | $1.99〜$19.99、スキップ $0.99 | 写真の猫探し |
+| [Perfect Angle](https://apps.apple.com/hr/app/id1040464173?l=hr) | 有料＋ヒント | 本体 $1.99（€1.99）、ヒント 10 回 $0.99 | 錯視の向きをそろえるパズル |
+
+### 勝算の表
+| 項目 | 内容 |
 |---|---|
-| `project.yml` | XcodeGen の spec。`.xcodeproj` はコミットしない |
-| `App/Sources/`, `Tests/` | ひな形のアプリとテスト（Swift Testing） |
-| `App/Resources/` | アイコン、アクセントカラー、`PrivacyInfo.xcprivacy` |
-| `.github/workflows/ci.yml` | push / PR で daily-actions の `ios-ci.yml` を呼ぶ（40 桁の SHA で固定） |
-| `.github/workflows/testflight.yml` | 手動（workflow_dispatch）で `ios-testflight.yml` を呼ぶ（アップロードのあと内部テストに配信） |
-| `.github/workflows/asc.yml` | 手動で `ios-asc.yml` を呼ぶ（App Store Connect に名前・説明などを入れる / 最新ビルドを配信） |
-| `docs/app-store.json`, `PRIVACY.md` | App Store Connect に入れる情報、プライバシーポリシー |
-| `scripts/pin-daily-actions.sh` | daily-actions の SHA を書き換える（整備用のセッションか本人だけ。自己 CI の成功を確かめる） |
-| `scripts/new-app.sh` | 名前・表示名・枠（Bundle ID）に書き換える |
-| `scripts/preflight-push.sh`, `.githooks/pre-push` | push の前の検査（秘密・個人情報）と1日の上限 |
-| `scripts/scan-sensitive.sh` | 検査の複製（正本は daily-actions/scan/。違うと CI が警告） |
-| `scripts/make-icon.py` | アイコンを作る（Pillow） |
-| `.claude/skills/` | dev-lifecycle / dev-judgment / dev-workflow（naki0227/useful-map から取得） |
-| `CLAUDE.md`, `docs/daily-runbook.md` | 毎日のセッションの決まりと手順 |
-| `docs/app-store.md` | 審査の危険・本人がすることの記録 |
+| 払う理由 3 つ | ①無料の塔を解き終えた人が「もっと大きな塔を回したい」②図鑑の影だけの 16 匹に会いたい ③忙しくて見のがした日の塔を遊びたい |
+| 値段の位置 | 比べたアプリの全解放（$4.99）・サブスク（$3.99/月）より安い ¥480 の 1 回で、塔 28・猫 16・過去の塔。ヒントや広告の追加課金なし |
+| 売上の幅 | 月 300 / 1,000 / 3,000 インストール × 有料化 2%（フリーミアムの中央値、RevenueCat 2026）× ¥408（手数料 15% を引く）＝ 月 約 ¥2,400 / ¥8,200 / ¥24,500 |
+| 弱点 | 無料の塔（8 ＋毎日）で満足される → 図鑑に珍しい猫の影を見せる、9 番の塔をお試しにする、課金の画面に Pro の塔の絵を並べる |
 
-## 手元（Mac）で開く
+## デモで見せる流れ（起動引数 `-demo`、約 18 秒）
+1. 今日の塔が夕空に浮かぶ → 回して、窓の中の光る目をたたく（窓の猫）。
+2. 向きを変えると道がつながって床が光る → 錯視の道を渡って屋上の猫に会う。
+3. 2 つの向きで影の足あとをたたくと、影の猫が現れる。
 
-```sh
-brew install xcodegen   # CI は 2.46.0 で固定
-xcodegen generate
-open DailyApp.xcodeproj
-```
-
-## 版
-
-- Xcode 27.1（ランナー `xcode-27`。GitHub では Preview 扱い）、iOS 18.0 以降、iPhone だけ（iPhone Duo の内側の画面にも合わせる）、Swift 6
-- スキルの取得元：`naki0227/personal-knowledge`（Vault、private）の `templates/repo-bootstrap/.claude/skills/` を、本人の整備用セッションで写す（2026-11-05 に app-quality-bar を追加）
+## 作りと確かめ方
+- 処理は `App/Sources/Model/`（Foundation だけ）：`Tower`（見え方・錯視の道）、`Walker`（道さがし）、`TowerGenerator`（種から塔を作り、解けるまで作り直す）、`Hunt`（遊びの手続き・ヒント）、`SaveData`（続けた日数・図鑑）。テストは `Tests/`（Swift Testing）。
+- 画面の言葉は `tr("日本語", "English")`／中身は `T("日本語", "English")`。`python3 scripts/gen-strings.py` で `Localizable.xcstrings` を作る。
+- 撮影：起動引数 `-screenshotScene <名前>`（`_ja` で日本語）。`onboarding`・`onboarding2`・`onboarding3`・`found`・`hint`・`shadow`・`shelf`・`book`・`result`・`settings`・`paywall`・`empty`・`pro`。
+- UI テスト：`-uiTestFresh` で案内 → 回す → ヒント → 図鑑 → 棚（`UITests/MainFlowUITests.swift`）。
+- アイコン：`python3 scripts/make-icon-tower.py`。
