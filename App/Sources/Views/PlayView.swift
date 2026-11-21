@@ -110,6 +110,7 @@ struct PlayView: View {
                 Label(tr("右へ", "Right"), systemImage: "arrow.uturn.right")
             }
             .buttonStyle(TagButtonStyle())
+            .overlay(hintGlow(model.hunt.hint.map { $0.turns == -1 || $0.turns == 2 } ?? false))
             .accessibilityLabel(tr("右へ回す", "Turn right"))
             .accessibilityIdentifier("main.turnRight")
             Button { model.askHint() } label: {
@@ -121,12 +122,21 @@ struct PlayView: View {
                 Label(tr("左へ", "Left"), systemImage: "arrow.uturn.left")
             }
             .buttonStyle(TagButtonStyle())
+            .overlay(hintGlow(model.hunt.hint.map { $0.turns == 1 || $0.turns == 2 } ?? false))
             .accessibilityLabel(tr("左へ回す", "Turn left"))
             .accessibilityIdentifier("main.turnLeft")
         }
         .padding(.horizontal, 16)
         .padding(.top, 8)
         .padding(.bottom, 6)
+    }
+
+    /// ヒントが「回す」を指しているとき、そのボタンに灯りの縁（押せる範囲は持たない）
+    private func hintGlow(_ on: Bool) -> some View {
+        RoundedRectangle(cornerRadius: Radius.button, style: .continuous)
+            .stroke(Lamp.glow, lineWidth: on ? 3 : 0)
+            .padding(.bottom, 4)
+            .allowsHitTesting(false)
     }
 
     private var hintTitle: String {

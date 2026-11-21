@@ -103,7 +103,14 @@ enum TowerGenerator {
         tower.ladders = ladders.filter { !roofs.contains($0.upper.cell) && !roofs.contains($0.lower.cell) }
 
         // 始まりの床：低くて手前（向き 0 で見えるもの）
-        let visible0 = tower.visibleTops(view: 0)
+        // 旅人の体（床の上 0.3〜0.7）まで見える床だけ（手前の柱に隠れない）
+        let visible0 = tower.visibleTops(view: 0).filter { t in
+            let r = tower.rotated(x: t.x, y: t.y, view: 0)
+            // 手前（向き 0 では +x と +y）の同じ高さに壁があると、体の半分が隠れる
+            let front = [Cell(x: t.x + 1, y: t.y, z: t.h), Cell(x: t.x, y: t.y + 1, z: t.h)]
+            return !front.contains(where: tower.solids.contains)
+                && [0.3, 0.7].allSatisfy { tower.isVisible(u: Double(r.u), w: Double(r.w), h: Double(t.h) + $0, view: 0) }
+        }
         guard let start = visible0.sorted(by: { a, b in
             let ra = tower.rotated(x: a.x, y: a.y, view: 0), rb = tower.rotated(x: b.x, y: b.y, view: 0)
             return (a.h, -(ra.u + ra.w), a.x, a.y) < (b.h, -(rb.u + rb.w), b.x, b.y)

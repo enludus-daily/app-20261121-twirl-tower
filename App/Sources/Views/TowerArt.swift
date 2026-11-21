@@ -138,6 +138,12 @@ struct TowerPainter {
             case .walker: drawWalker(&ctx)
             }
         }
+        // 塔の陰に入っても見失わないよう、旅人の輪郭を薄く上に重ねる
+        if state.showWalker, state.walker != nil {
+            var ghost = ctx
+            ghost.opacity = 0.35
+            drawWalker(&ghost)
+        }
     }
 
     // MARK: 面
