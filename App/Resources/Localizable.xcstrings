@@ -1156,13 +1156,13 @@
         }
       }
     },
-    "今日の塔は解いた。また明日": {
+    "今日の塔は解いた。次の塔まで あと %d 時間": {
       "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Solved today. A new one tomorrow"
+            "value": "Solved today. Next tower in %d h"
           }
         }
       }
@@ -1812,6 +1812,17 @@
           "stringUnit": {
             "state": "translated",
             "value": "Changes color in the setting sun"
+          }
+        }
+      }
+    },
+    "明日の塔の影": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tomorrow's tower, in shadow"
           }
         }
       }

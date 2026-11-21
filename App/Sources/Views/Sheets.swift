@@ -72,7 +72,7 @@ struct ShelfSheet: View {
                     .background(ArchPanel(arch: 40, corner: 12).fill(Sky.gradient))
                 VStack(alignment: .leading, spacing: 6) {
                     Text(verbatim: Catalog.name(id)).font(Fonts.head(16)).foregroundStyle(Ink.text)
-                    Text(verbatim: model.isDone(id) ? tr("今日の塔は解いた。また明日", "Solved today. A new one tomorrow") : trf("猫 %d / 5 ・ 毎日ちがう塔", "Cats %d / 5 · a new tower every day", model.catsFound(in: id)))
+                    Text(verbatim: model.isDone(id) ? trf("今日の塔は解いた。次の塔まで あと %d 時間", "Solved today. Next tower in %d h", model.hoursToTomorrow) : trf("猫 %d / 5 ・ 毎日ちがう塔", "Cats %d / 5 · a new tower every day", model.catsFound(in: id)))
                         .font(Fonts.body(13)).foregroundStyle(Ink.soft)
                     Text(verbatim: model.streak > 0 ? trf("%d 日つづけて解いている（最長 %d 日）", "%d-day streak (best %d)", model.streak, model.save.bestStreak) : tr("今日から、また 1 日目", "Day one starts today"))
                         .font(Fonts.label(11)).kerning(0.4).foregroundStyle(Mint.deep)
@@ -262,6 +262,16 @@ struct ResultSheet: View {
                 .background(ArchPanel(arch: 40).fill(Ink.panel))
                 .padding(.horizontal, 20)
                 if case .daily = id {
+                    // 小さな驚き：明日の塔の影だけ見せる
+                    VStack(spacing: 6) {
+                        TowerArt(tower: model.tower(.daily(Days.offset(model.now, days: 1, calendar: model.calendar))), state: ArtState(angle: 0.5, snapped: nil, showWalker: false, still: true), padding: 4, maxScale: 14)
+                            .colorMultiply(Color(hex: 0x3B2C47))
+                            .opacity(0.55)
+                            .frame(width: 110, height: 90)
+                        Text(verbatim: tr("明日の塔の影", "Tomorrow's tower, in shadow"))
+                            .font(Fonts.label(11)).kerning(0.6).foregroundStyle(Ink.onSkySoft)
+                    }
+                    .accessibilityElement(children: .combine)
                     Text(verbatim: model.streak > 0 ? trf("%d 日つづけて解いた。明日はまた別の塔", "%d days in a row. A new tower tomorrow", model.streak) : tr("明日はまた別の塔", "A new tower tomorrow"))
                         .font(Fonts.body(13)).foregroundStyle(Ink.onSky)
                 }
