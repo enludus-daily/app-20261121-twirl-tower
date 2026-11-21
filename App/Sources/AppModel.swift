@@ -53,6 +53,9 @@ final class AppModel {
     var banner: Banner?
     var lastCompleted: TowerID?
     var reduceMotion = false
+    /// UI テスト：動きを止めて、部品の判定を安定させる（動きを減らす設定と同じ扱い）
+    var calm = false
+    var motionOff: Bool { reduceMotion || calm }
     /// 撮影のとき：動きを止めた絵にする
     var still = false
     var proOverride = false
@@ -163,7 +166,7 @@ final class AppModel {
         // 少し行きすぎて戻る（吸い付くように止まる）
         let c1 = 1.4, c3 = c1 + 1
         let e = 1 + c3 * pow(t - 1, 3) + c1 * pow(t - 1, 2)
-        return snapFrom + (snapTo - snapFrom) * (reduceMotion ? 1 : e)
+        return snapFrom + (snapTo - snapFrom) * (motionOff ? 1 : e)
     }
 
     var isRotating: Bool { dragAngle != nil || (snapStart.map { Date().timeIntervalSince($0) < 0.34 } ?? false) }
@@ -285,7 +288,7 @@ final class AppModel {
                 self.walkStart = Date()
                 self.markBusy(0.25)
                 self.play(.step)
-                try? await Task.sleep(for: .milliseconds(self.reduceMotion ? 60 : 210))
+                try? await Task.sleep(for: .milliseconds(self.motionOff ? 60 : 210))
                 let got = self.hunt.step(to: b)
                 self.walkFrom = nil
                 self.walkTo = nil
@@ -391,17 +394,17 @@ final class AppModel {
         if let g = glowStart {
             for (i, t) in glowTops.enumerated() {
                 let local = date.timeIntervalSince(g) - Double(i) * 0.055
-                if local > 0, local < 1.0 { s.glow[t] = reduceMotion ? 0.6 : sin(local * .pi) }
+                if local > 0, local < 1.0 { s.glow[t] = motionOff ? 0.6 : sin(local * .pi) }
             }
         }
         for (id, start) in popStart {
             let t = date.timeIntervalSince(start)
-            if t < 0.6 { s.pop[id] = reduceMotion ? 1 : springPop(t / 0.6) }
+            if t < 0.6 { s.pop[id] = motionOff ? 1 : springPop(t / 0.6) }
         }
         let wagAge = popStart.values.map { date.timeIntervalSince($0) }.min() ?? 99
-        s.wag = (still || reduceMotion || wagAge > 1.4) ? 0.4 : 0.4 + sin(wagAge * 14) * 0.9 * (1 - wagAge / 1.4)
+        s.wag = (still || motionOff || wagAge > 1.4) ? 0.4 : 0.4 + sin(wagAge * 14) * 0.9 * (1 - wagAge / 1.4)
         s.time = date.timeIntervalSinceReferenceDate
-        s.still = still || reduceMotion
+        s.still = still || motionOff
         return s
     }
 
@@ -413,7 +416,7 @@ final class AppModel {
 
     /// 揺れ（失敗）：減衰する横ずれ
     func shakeOffset(at date: Date) -> CGFloat {
-        guard !reduceMotion, let s = shakeStart else { return 0 }
+        guard !motionOff, let s = shakeStart else { return 0 }
         let t = date.timeIntervalSince(s)
         guard t < 0.42 else { return 0 }
         return CGFloat(sin(t * 48) * 8 * (1 - t / 0.42))
@@ -423,7 +426,8 @@ final class AppModel {
     func animating(at date: Date) -> Bool {
         if still { return false }
         if dragAngle != nil || walking { return true }
-        if hunt.hint?.level ?? 0 >= 3, !reduceMotion { return true }
+        if motionOff { return false }
+        if hunt.hint?.level ?? 0 >= 3, !motionOff { return true }
         return date < busyUntil
     }
 

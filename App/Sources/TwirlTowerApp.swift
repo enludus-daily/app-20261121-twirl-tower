@@ -118,6 +118,7 @@ enum Launch {
             }
             let model = AppModel(persists: false, now: stageDate())
             model.soundOn = false
+            model.calm = true
             return model
         }
         guard isDemo || scene != nil else { return AppModel() }

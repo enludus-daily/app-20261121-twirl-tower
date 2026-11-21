@@ -142,7 +142,7 @@ struct OnboardingView: View {
 
     /// 見本の塔をゆっくり回す（撮影・動きを減らす設定では止める）
     private func startSpin() {
-        guard !model.still, !model.reduceMotion else { return }
+        guard !model.still, !model.motionOff else { return }
         spin = Task { @MainActor in
             while !Task.isCancelled {
                 try? await Task.sleep(for: .milliseconds(1700))

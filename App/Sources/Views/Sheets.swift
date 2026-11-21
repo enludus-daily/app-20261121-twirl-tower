@@ -286,7 +286,7 @@ struct ResultSheet: View {
         .background(SkyBackdrop().ignoresSafeArea())
         .task {
             // 灯りを 1 つずつ（動きを減らす設定ではまとめて）
-            if model.reduceMotion || model.still {
+            if model.motionOff || model.still {
                 shown = 3
                 return
             }
