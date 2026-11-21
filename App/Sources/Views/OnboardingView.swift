@@ -9,7 +9,7 @@ struct TurningTowerArt: View, Animatable {
     var glow: [Top: Double] = [:]
     var showWalker = false
 
-    var animatableData: Double {
+    nonisolated var animatableData: Double {
         get { angle }
         set { angle = newValue }
     }
