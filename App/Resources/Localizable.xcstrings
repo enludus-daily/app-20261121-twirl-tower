@@ -1173,7 +1173,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Met %d times"
+            "value": "Times met: %d"
           }
         }
       }

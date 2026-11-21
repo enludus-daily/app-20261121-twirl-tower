@@ -199,7 +199,7 @@ struct CatCard: View {
             if known {
                 Text(verbatim: trf("好物：%@", "Loves: %@", cat.food.text)).font(Fonts.body(11)).foregroundStyle(Ink.soft).lineLimit(2)
                 Text(verbatim: cat.quirk.text).font(Fonts.body(11)).foregroundStyle(Ink.faint).lineLimit(2)
-                Text(verbatim: trf("会えた回数 %d", "Met %d times", count)).font(Fonts.number(10)).foregroundStyle(Mint.deep)
+                Text(verbatim: trf("会えた回数 %d", "Times met: %d", count)).font(Fonts.number(10)).foregroundStyle(Mint.deep)
             } else {
                 Text(verbatim: cat.rare ? tr("Pro の塔にだけいる珍しい猫", "A rare cat found only in Pro towers") : tr("どこかの塔にいる", "Hiding in some tower"))
                     .font(Fonts.body(11)).foregroundStyle(Ink.faint).lineLimit(2)
@@ -338,9 +338,18 @@ struct LampIcon: View {
             if lit {
                 Circle().fill(Lamp.glow.opacity(0.35)).frame(width: 46, height: 46)
             }
-            Capsule().fill(lit ? Lamp.glow : Ink.panel.opacity(0.35)).frame(width: 18, height: 26)
-            Capsule().stroke(lit ? Lamp.deep : Ink.onSkySoft, lineWidth: 1.5).frame(width: 18, height: 26)
-            Rectangle().fill(lit ? Lamp.deep : Ink.onSkySoft).frame(width: 12, height: 3).offset(y: -15)
+            // 吊りランタン：取っ手・笠・ガラス・台
+            Circle().trim(from: 0.5, to: 1).stroke(lit ? Lamp.deep : Ink.onSkySoft, lineWidth: 1.5).frame(width: 10, height: 10).offset(y: -19)
+            Path { p in
+                p.move(to: CGPoint(x: 5, y: 6)); p.addLine(to: CGPoint(x: 23, y: 6)); p.addLine(to: CGPoint(x: 14, y: 0)); p.closeSubpath()
+            }
+            .fill(lit ? Lamp.deep : Ink.onSkySoft)
+            .frame(width: 28, height: 6)
+            .offset(y: -13)
+            RoundedRectangle(cornerRadius: 4, style: .continuous).fill(lit ? Lamp.glow : Ink.panel.opacity(0.35)).frame(width: 18, height: 20)
+            RoundedRectangle(cornerRadius: 4, style: .continuous).stroke(lit ? Lamp.deep : Ink.onSkySoft, lineWidth: 1.5).frame(width: 18, height: 20)
+            Rectangle().fill(lit ? Lamp.deep : Ink.onSkySoft).frame(width: 1.5, height: 20)
+            Capsule().fill(lit ? Lamp.deep : Ink.onSkySoft).frame(width: 22, height: 4).offset(y: 12)
         }
         .frame(width: 46, height: 46)
         .scaleEffect(lit ? 1 : 0.85)
